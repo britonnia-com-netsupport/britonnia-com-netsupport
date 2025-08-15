@@ -15,6 +15,7 @@ import EducationSolutions from "./pages/external/EducationSolutions";
 import CorporateSolutions from "./pages/external/CorporateSolutions";
 import NotFound from "./pages/NotFound";
 import ContactTest from "./pages/ContactTest";
+import Downloads from "./pages/Downloads";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/external/education-solutions" element={<EducationSolutions />} />
           <Route path="/external/corporate-solutions" element={<CorporateSolutions />} />
           <Route path="/contact-test" element={<ContactTest />} />
+          <Route path="/downloads" element={<Downloads />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

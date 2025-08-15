@@ -18,7 +18,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import netSupportManagerImage from "@/assets/netsupport-manager-interface.jpg";
+import netSupportManagerImage from "@/assets/netsupport-education-hero.png";
 
 const NetSupportManager = () => {
   const features = [

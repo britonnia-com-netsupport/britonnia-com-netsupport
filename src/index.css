@@ -17,9 +17,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 240 73% 18%;
+    --primary: 195 85% 40%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 255 91% 73%;
+    --primary-glow: 195 85% 70%;
 
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -38,9 +38,9 @@ All colors MUST be HSL.
     --ring: 240 73% 18%;
 
     /* Tech Gradients */
-    --gradient-tech-primary: linear-gradient(135deg, hsl(240 73% 18%) 0%, hsl(255 91% 73%) 100%);
-    --gradient-tech-secondary: linear-gradient(135deg, hsl(240 73% 18%) 0%, hsl(260 73% 28%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(240 73% 18%) 0%, hsl(255 91% 73%) 50%, hsl(260 73% 28%) 100%);
+    --gradient-tech-primary: linear-gradient(135deg, hsl(195 85% 40%) 0%, hsl(195 85% 70%) 100%);
+    --gradient-tech-secondary: linear-gradient(135deg, hsl(195 85% 40%) 0%, hsl(195 70% 30%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(195 85% 40%) 0%, hsl(195 85% 70%) 50%, hsl(195 70% 30%) 100%);
     --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.8) 0%, hsl(240 4.8% 95.9% / 0.6) 100%);
 
     /* Shadows */
@@ -79,9 +79,9 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 255 91% 73%;
-    --primary-foreground: 240 73% 18%;
-    --primary-glow: 240 73% 18%;
+    --primary: 195 85% 70%;
+    --primary-foreground: 195 85% 10%;
+    --primary-glow: 195 85% 40%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -100,9 +100,9 @@ All colors MUST be HSL.
     --ring: 255 91% 73%;
 
     /* Dark Tech Gradients */
-    --gradient-tech-primary: linear-gradient(135deg, hsl(255 91% 73%) 0%, hsl(240 73% 18%) 100%);
-    --gradient-tech-secondary: linear-gradient(135deg, hsl(255 91% 73%) 0%, hsl(260 73% 28%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(255 91% 73%) 0%, hsl(240 73% 18%) 50%, hsl(260 73% 28%) 100%);
+    --gradient-tech-primary: linear-gradient(135deg, hsl(195 85% 70%) 0%, hsl(195 85% 40%) 100%);
+    --gradient-tech-secondary: linear-gradient(135deg, hsl(195 85% 70%) 0%, hsl(195 70% 30%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(195 85% 70%) 0%, hsl(195 85% 40%) 50%, hsl(195 70% 30%) 100%);
     --gradient-card: linear-gradient(135deg, hsl(217.2 32.6% 17.5% / 0.8) 0%, hsl(222.2 84% 4.9% / 0.6) 100%);
 
     /* Dark Shadows */

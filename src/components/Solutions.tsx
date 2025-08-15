@@ -13,7 +13,7 @@ import {
 import { ProductInterestForm } from "@/components/forms/ProductInterestForm";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import netSupportImage from "@/assets/netsupport-solutions.jpg";
+import netSupportImage from "@/assets/classroom-cloud-hero.png";
 
 const Solutions = () => {
   const educationSolutions = [

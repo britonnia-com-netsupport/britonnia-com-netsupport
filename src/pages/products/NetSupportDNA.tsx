@@ -17,7 +17,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import netSupportDNAImage from "@/assets/netsupport-dna-dashboard.jpg";
+import netSupportDNAImage from "@/assets/netsupport-dna-hero.png";
 
 const NetSupportDNA = () => {
   const features = [

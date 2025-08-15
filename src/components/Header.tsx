@@ -1,14 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X, User, LogOut } from "lucide-react";
 import { useState } from "react";
-import { useAuth } from "@/contexts/AuthContext";
-import { AuthModal } from "@/components/auth/AuthModal";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [authModalOpen, setAuthModalOpen] = useState(false);
-  const { user, signOut } = useAuth();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -49,30 +44,10 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* Auth Section */}
+          {/* Free Trial Section */}
           <div className="hidden md:flex items-center gap-3">
-            {user ? (
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="sm" className="gap-2">
-                    <User className="h-4 w-4" />
-                    Account
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                  <DropdownMenuItem onClick={signOut}>
-                    <LogOut className="mr-2 h-4 w-4" />
-                    Sign Out
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <Button variant="outline" size="sm" onClick={() => setAuthModalOpen(true)}>
-                Sign In
-              </Button>
-            )}
-            <Button variant="hero" size="sm">
-              Get Started
+            <Button variant="hero" size="sm" onClick={() => window.location.href = '/downloads'}>
+              Free Trial
             </Button>
           </div>
 
@@ -131,25 +106,15 @@ const Header = () => {
               >
                 Contact
               </a>
-              {!user && (
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="w-full mt-4"
-                  onClick={() => setAuthModalOpen(true)}
-                >
-                  Sign In
-                </Button>
-              )}
-              <Button variant="hero" size="sm" className="w-full mt-2">
-                Get Started
+              <Button variant="hero" size="sm" className="w-full mt-4" onClick={() => window.location.href = '/downloads'}>
+                Free Trial
               </Button>
             </nav>
           </div>
         )}
       </div>
 
-      <AuthModal open={authModalOpen} onOpenChange={setAuthModalOpen} />
+      
     </header>
   );
 };

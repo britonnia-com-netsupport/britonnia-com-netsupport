@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import ghanaOffice from "@/assets/ghana-office.jpg";
+import ghanaOffice from "@/assets/netsupport-dna-hero.png";
 
 const About = () => {
   const achievements = [

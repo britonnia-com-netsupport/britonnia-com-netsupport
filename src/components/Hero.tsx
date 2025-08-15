@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/netsupport-education-hero.png";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroBg}
-          alt="Technology solutions background"
+          alt="NetSupport classroom management solution"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-hero opacity-80" />
@@ -43,14 +43,14 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-12">
-            <Button variant="hero" size="xl" className="group">
-              Discover Solutions
+            <Button variant="hero" size="xl" className="group" onClick={() => window.location.href = '/downloads'}>
+              Free Trial
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button variant="glass" size="xl" className="group">
+            <Button variant="glass" size="xl" className="group" onClick={() => window.location.href = '/contact'}>
               <Play className="mr-2 h-5 w-5" />
-              Watch Demo
+              Contact Us
             </Button>
           </div>
 

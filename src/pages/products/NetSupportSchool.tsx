@@ -16,7 +16,7 @@ import {
   ArrowRight,
   Star
 } from "lucide-react";
-import netSupportSchoolImage from "@/assets/netsupport-school.jpg";
+import netSupportSchoolImage from "@/assets/netsupport-education-hero.png";
 
 const NetSupportSchool = () => {
   const features = [

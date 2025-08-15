@@ -16,7 +16,7 @@ import {
   Star,
   Globe
 } from "lucide-react";
-import classroomCloudImage from "@/assets/classroom-cloud.jpg";
+import classroomCloudImage from "@/assets/classroom-cloud-hero.png";
 
 const ClassroomCloud = () => {
   const features = [
