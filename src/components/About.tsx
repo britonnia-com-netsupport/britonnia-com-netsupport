@@ -43,11 +43,13 @@ const About = () => {
   ];
 
   const services = [
-    "Software consultation and needs assessment",
-    "Complete NetSupport solution implementation",
+    "IT software consultation and needs assessment",
+    "NetSupport Software reseller services for Ghana & West Africa",
+    "Complete solution implementation and deployment",
     "Training and onboarding for all user levels",
     "Ongoing technical support and maintenance",
     "Custom integration with existing systems",
+    "Regional support across West African countries",
     "Regular updates and feature enhancements"
   ];
 
@@ -95,16 +97,18 @@ const About = () => {
             </h3>
             
             <p className="text-muted-foreground leading-relaxed">
-              Britonnia Ltd is a premier technology consultancy firm based in Ghana, 
-              specializing as an authorized reseller of NetSupport Software Ltd solutions. 
-              We bridge the gap between cutting-edge educational and corporate technology 
-              and the unique needs of West African organizations.
+              Britonnia Ltd is a premier IT software consultancy firm based in Ghana, 
+              specializing as an authorized NetSupport Software reseller for Ghana and West Africa. 
+              We provide comprehensive technology consulting services and bridge the gap between 
+              cutting-edge educational and corporate software solutions and the unique needs of 
+              West African organizations.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              With deep understanding of both local requirements and global technology 
-              standards, we provide comprehensive consulting, implementation, and support 
-              services that ensure our clients maximize their technology investments.
+              As the official NetSupport Software reseller for Ghana and West Africa, we offer 
+              complete consulting services including needs assessment, solution implementation, 
+              training, and ongoing technical support to ensure our clients maximize their 
+              technology investments across the region.
             </p>
 
             <div className="space-y-4">
