@@ -7,120 +7,14 @@ export type Json =
   | Json[]
 
 export type Database = {
-  // Allows to automatically instanciate createClient with right options
+  // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
     PostgrestVersion: "13.0.4"
   }
   public: {
     Tables: {
-      contact_inquiries: {
-        Row: {
-          company_name: string | null
-          country: string | null
-          created_at: string
-          email: string
-          full_name: string
-          id: string
-          inquiry_type: string | null
-          message: string
-          phone: string | null
-          status: string | null
-          updated_at: string
-        }
-        Insert: {
-          company_name?: string | null
-          country?: string | null
-          created_at?: string
-          email: string
-          full_name: string
-          id?: string
-          inquiry_type?: string | null
-          message: string
-          phone?: string | null
-          status?: string | null
-          updated_at?: string
-        }
-        Update: {
-          company_name?: string | null
-          country?: string | null
-          created_at?: string
-          email?: string
-          full_name?: string
-          id?: string
-          inquiry_type?: string | null
-          message?: string
-          phone?: string | null
-          status?: string | null
-          updated_at?: string
-        }
-        Relationships: []
-      }
-      product_interests: {
-        Row: {
-          created_at: string
-          id: string
-          inquiry_id: string | null
-          product_name: string
-        }
-        Insert: {
-          created_at?: string
-          id?: string
-          inquiry_id?: string | null
-          product_name: string
-        }
-        Update: {
-          created_at?: string
-          id?: string
-          inquiry_id?: string | null
-          product_name?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "product_interests_inquiry_id_fkey"
-            columns: ["inquiry_id"]
-            isOneToOne: false
-            referencedRelation: "contact_inquiries"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      profiles: {
-        Row: {
-          company_name: string | null
-          country: string | null
-          created_at: string
-          full_name: string | null
-          id: string
-          phone: string | null
-          position: string | null
-          updated_at: string
-          user_id: string
-        }
-        Insert: {
-          company_name?: string | null
-          country?: string | null
-          created_at?: string
-          full_name?: string | null
-          id?: string
-          phone?: string | null
-          position?: string | null
-          updated_at?: string
-          user_id: string
-        }
-        Update: {
-          company_name?: string | null
-          country?: string | null
-          created_at?: string
-          full_name?: string | null
-          id?: string
-          phone?: string | null
-          position?: string | null
-          updated_at?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
