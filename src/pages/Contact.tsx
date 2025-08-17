@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InteractiveMap from "@/components/InteractiveMap";
 
 const Contact = () => {
   return (
@@ -150,14 +151,7 @@ const Contact = () => {
           </div>
           
           <div className="bg-gradient-card rounded-2xl p-8 border border-border/50">
-            <div className="aspect-video bg-muted/50 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-                <p className="text-muted-foreground font-inter">
-                  Interactive map coming soon
-                </p>
-              </div>
-            </div>
+            <InteractiveMap />
           </div>
         </div>
       </section>

@@ -51,22 +51,28 @@ export const NewsletterSignup = ({ className = "" }: NewsletterSignupProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={`flex gap-3 ${className}`}>
-      <Input
-        type="email"
-        placeholder="Enter your email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        className="flex-1"
-        required
-      />
-      <Button type="submit" variant="glass" size="sm" disabled={loading}>
-        {loading ? (
-          <Loader2 className="h-4 w-4 animate-spin" />
-        ) : (
-          <Mail className="h-4 w-4" />
-        )}
-      </Button>
-    </form>
+    <div className="w-full max-w-md mx-auto">
+      <form onSubmit={handleSubmit} className={`flex gap-2 ${className}`}>
+        <Input
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="flex-1 bg-white/20 border-white/30 text-white placeholder:text-white/70 focus:bg-white/30"
+          required
+        />
+        <Button type="submit" variant="glass" size="sm" disabled={loading}>
+          {loading ? (
+            <Loader2 className="h-4 w-4 animate-spin" />
+          ) : (
+            <Mail className="h-4 w-4" />
+          )}
+          <span className="sr-only">Subscribe</span>
+        </Button>
+      </form>
+      <p className="text-xs text-white/70 mt-2 text-center">
+        Stay updated with our latest insights and solutions
+      </p>
+    </div>
   );
 };

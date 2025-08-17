@@ -51,6 +51,26 @@ const translations = {
     'footer.solutions': 'Solutions',
     'footer.contact': 'Contact Info',
     'footer.rights': 'All rights reserved.',
+    
+    // Newsletter
+    'newsletter.title': 'Stay Updated',
+    'newsletter.subtitle': 'Subscribe to our newsletter for the latest updates and insights',
+    'newsletter.placeholder': 'Enter your email',
+    'newsletter.subscribe': 'Subscribe',
+    'newsletter.success': 'Subscribed!',
+    'newsletter.description': 'You\'ll receive our latest updates and insights.',
+    
+    // Products
+    'products.netSupportSchool': 'NetSupport School',
+    'products.classroomCloud': 'Classroom.cloud',
+    'products.netSupportManager': 'NetSupport Manager',
+    'products.netSupportDNA': 'NetSupport DNA',
+    
+    // Solutions
+    'solutions.education': 'Education Solutions',
+    'solutions.corporate': 'Corporate Solutions',
+    'solutions.consultancy': 'IT Consultancy',
+    'solutions.support': 'Technical Support',
   },
   fr: {
     // Navigation
@@ -94,6 +114,26 @@ const translations = {
     'footer.solutions': 'Solutions',
     'footer.contact': 'Informations de contact',
     'footer.rights': 'Tous droits réservés.',
+    
+    // Newsletter
+    'newsletter.title': 'Restez Informé',
+    'newsletter.subtitle': 'Abonnez-vous à notre newsletter pour les dernières mises à jour et informations',
+    'newsletter.placeholder': 'Entrez votre email',
+    'newsletter.subscribe': 'S\'abonner',
+    'newsletter.success': 'Abonné!',
+    'newsletter.description': 'Vous recevrez nos dernières mises à jour et informations.',
+    
+    // Products
+    'products.netSupportSchool': 'NetSupport School',
+    'products.classroomCloud': 'Classroom.cloud',
+    'products.netSupportManager': 'NetSupport Manager',
+    'products.netSupportDNA': 'NetSupport DNA',
+    
+    // Solutions
+    'solutions.education': 'Solutions Éducatives',
+    'solutions.corporate': 'Solutions Corporatives',
+    'solutions.consultancy': 'Conseil IT',
+    'solutions.support': 'Support Technique',
   }
 };
 
