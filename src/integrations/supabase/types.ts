@@ -14,7 +14,113 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      contact_inquiries: {
+        Row: {
+          company_name: string | null
+          country: string | null
+          created_at: string
+          email: string
+          full_name: string
+          id: string
+          inquiry_type: string | null
+          message: string
+          phone: string | null
+          status: string | null
+          updated_at: string
+        }
+        Insert: {
+          company_name?: string | null
+          country?: string | null
+          created_at?: string
+          email: string
+          full_name: string
+          id?: string
+          inquiry_type?: string | null
+          message: string
+          phone?: string | null
+          status?: string | null
+          updated_at?: string
+        }
+        Update: {
+          company_name?: string | null
+          country?: string | null
+          created_at?: string
+          email?: string
+          full_name?: string
+          id?: string
+          inquiry_type?: string | null
+          message?: string
+          phone?: string | null
+          status?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      product_interests: {
+        Row: {
+          created_at: string
+          id: string
+          inquiry_id: string | null
+          product_name: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          inquiry_id?: string | null
+          product_name: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          inquiry_id?: string | null
+          product_name?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "product_interests_inquiry_id_fkey"
+            columns: ["inquiry_id"]
+            isOneToOne: false
+            referencedRelation: "contact_inquiries"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          company_name: string | null
+          country: string | null
+          created_at: string
+          full_name: string | null
+          id: string
+          phone: string | null
+          position: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          company_name?: string | null
+          country?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          position?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          company_name?: string | null
+          country?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          position?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
