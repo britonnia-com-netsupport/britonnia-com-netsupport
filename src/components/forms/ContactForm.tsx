@@ -124,6 +124,35 @@ export const ContactForm = ({
         }
       }
 
+      // Send email notifications
+      try {
+        const response = await fetch(`https://clopjzpkvjyomsuanlkj.supabase.co/functions/v1/send-contact-email`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNsb3BqenBrdmp5b21zdWFubGtqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUyNTQ5NDUsImV4cCI6MjA3MDgzMDk0NX0.GoVDBEgATloBPD03ig_5-XxxyBm6pd49oSLYwFlsYYI`,
+          },
+          body: JSON.stringify({
+            name: formData.fullName,
+            email: formData.email,
+            phone: formData.phone,
+            company: formData.companyName,
+            country: formData.country,
+            message: formData.message,
+            inquiryType: inquiryType
+          }),
+        });
+
+        if (!response.ok) {
+          console.error('Email sending failed:', await response.text());
+        } else {
+          console.log('Email sent successfully');
+        }
+      } catch (emailError) {
+        console.error('Email function error:', emailError);
+      }
+
+
       // Success
       setSubmitted(true);
       toast({
